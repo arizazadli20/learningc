@@ -5,15 +5,15 @@
 
 int main() {
 
-  bool isonline=1;
+    int x = 30;
+    int y = 20;
+    int z = 0;
 
-    if (isonline) {
-        printf("You are Online\n");
-    }
+    //z=x*y;
+    //z=x-y;
+    //z=x/y;
 
-else {
-    printf("You are Ofline\n");
-}
+    printf("%d",z);
 
     return 0;
 }
