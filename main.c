@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
-//SHOPING CHART PROGRAM
+//Mad Libs game
 
 int main() {
 
@@ -14,25 +14,25 @@ int main() {
 
     printf("Enter your adjective: ");
     fgets(adjective1,sizeof(adjective1),stdin);
+    adjective1[strlen (adjective1)-1]='\0';
 
-    printf("Enter your noun (person or animal): ");
+    printf("Enter your noun (animal): ");
     fgets(noun,sizeof(noun),stdin);
+    noun[strlen(noun)-1]='\0';
 
     printf("Enter your adjevtive: ");
     fgets(adjective2,sizeof(adjective2),stdin);
+    adjective2[strlen (adjective2)-1]='\0';
 
     printf("Enter your verb ( -ing): ");
     fgets(verb, sizeof(verb), stdin);
+    verb[strlen(verb)-1]='\0';
 
     printf("Enter your adjective: ");
     fgets(adjective3, sizeof(adjective3), stdin);
+    adjective3[strlen(adjective3)-1]='\0';
 
-    printf("%s\n", noun );
-    printf("%s\n", verb );
-    printf("%s\n", adjective1 );
-    printf("%s\n", adjective2 );
-    printf("%s\n", adjective3 );
-
+  printf("Today i went to the ZOO, I saw an %s %s and it loves %s so much. Not only this, %s is %s and %s too.",adjective1,noun,verb,noun,adjective2,adjective3);
 
 
     return 0;
