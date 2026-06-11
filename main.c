@@ -1,39 +1,19 @@
-
 #include <stdio.h>
-#include <string.h>
-
-//Mad Libs game
+// #include <math.h>  <-- Artıq pow() istifadə etməyəcəyimiz üçün buna heç ehtiyac qalmır!
 
 int main() {
+    double radius = 0.0;
+    double area = 0.0;
+    const double PI = 3.14159265359; // Daha dəqiq PI
 
-    char noun[50]= "";
-    char verb[50]= "";
-    char adjective1[50]= "";
-    char adjective2[50]= "";
-    char adjective3[50]= "";
+    printf("Enter the radius: ");
+    scanf("%lf", &radius);
 
-    printf("Enter your adjective: ");
-    fgets(adjective1,sizeof(adjective1),stdin);
-    adjective1[strlen (adjective1)-1]='\0';
+    // pow() əvəzinə birbaşa vurma (Prosessor üçün ən sürətli yol)
+    area = PI * (radius * radius);
 
-    printf("Enter your noun (animal): ");
-    fgets(noun,sizeof(noun),stdin);
-    noun[strlen(noun)-1]='\0';
-
-    printf("Enter your adjevtive: ");
-    fgets(adjective2,sizeof(adjective2),stdin);
-    adjective2[strlen (adjective2)-1]='\0';
-
-    printf("Enter your verb ( -ing): ");
-    fgets(verb, sizeof(verb), stdin);
-    verb[strlen(verb)-1]='\0';
-
-    printf("Enter your adjective: ");
-    fgets(adjective3, sizeof(adjective3), stdin);
-    adjective3[strlen(adjective3)-1]='\0';
-
-  printf("Today i went to the ZOO, I saw an %s %s and it loves %s so much. Not only this, %s is %s and %s too.",adjective1,noun,verb,noun,adjective2,adjective3);
-
+    // Sonuna \n qoymaq terminalı təmiz saxlayır
+    printf("The area is: %.2lf\n", area);
 
     return 0;
 }

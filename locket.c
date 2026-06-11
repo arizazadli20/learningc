@@ -3,7 +3,7 @@
 
 //Locker
 
-int main() {
+int locket() {
 
     int first=0;
     int second=0;
