@@ -5,15 +5,12 @@
 
 int main() {
 
-    int x = 30;
-    int y = 20;
-    int z = 0;
+    char item[50] = "";
+    float price=0;
+    int quantity=0;
 
-    //z=x*y;
-    //z=x-y;
-    //z=x/y;
+    printf("Which product u want to buy?");
 
-    printf("%d",z);
 
     return 0;
 }
