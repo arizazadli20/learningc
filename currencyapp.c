@@ -3,7 +3,7 @@
 
 //CURRENCY APP (DOLLAR AND MANAT)
 
-int main() {
+int currency() {
     int choice=0;
     float dollar=0;
     float manat=0;
@@ -26,17 +26,19 @@ int main() {
         printf("IT IS %.2f %s",manat,man);
 
     }
-else if (choice == 2) {
+    else if (choice == 2) {
 
-    printf("Enter the manat amount:  ");
-    scanf("%f",&manat);
-    dollar=manat*0.59;
-    printf("IT IS %.2f %s",dollar,dol);
+        printf("Enter the manat amount:  ");
+        scanf("%f",&manat);
+        dollar=manat*0.59;
+        printf("IT IS %.2f %s",dollar,dol);
 
     }
-else{
-    printf("INVALID INPUT");
-}
+    else{
+        printf("INVALID INPUT");
+    }
 
     return 0;
-}
+}//
+// Created by ARIZ AZADOV on 12/06/26.
+//

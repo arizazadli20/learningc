@@ -6,4 +6,6 @@ set(CMAKE_C_STANDARD 11)
 add_executable(codes main.c second.c
         ma.cpp
         locket.c
-        radius.c)
+        radius.c
+        lockernew.c
+        currencyapp.c)
