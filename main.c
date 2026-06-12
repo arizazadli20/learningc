@@ -1,42 +1,23 @@
 #include <stdio.h>
-#include <math.h>
 
-//CURRENCY APP (DOLLAR AND MANAT)
+//Switches
 
-int main() {
-    int choice=0;
-    float dollar=0;
-    float manat=0;
-    char dol[]="$";
-    char man[]="₼";
+int main () {
 
-    printf("Currency Calculator\n");
-    printf("1.DOLLAR TO MANAT\n");
-    printf("2.MANAT TO DOLLAR\n");
-    printf("ENTER YOUR CHOICE:  ");
-    scanf("%d",&choice);
+    char weekday='\0';
+printf("ENTER DAY OF THE WEEK (M,T,W,H,F,S,U): ");
+    scanf("%c",&weekday);
 
+    switch (weekday){
 
-
-    if (choice == 1) {
-
-        printf("Enter the dollar amount:  ");
-        scanf("%f",&dollar);
-        manat=dollar*1.70;
-        printf("IT IS %.2f %s",manat,man);
-
-    }
-else if (choice == 2) {
-
-    printf("Enter the manat amount:  ");
-    scanf("%f",&manat);
-    dollar=manat*0.59;
-    printf("IT IS %.2f %s",dollar,dol);
-
-    }
-else{
-    printf("INVALID INPUT");
+        case 'M': printf("Monday"); break;
+            case 'T': printf("Tuesday"); break;
+            case 'W': printf("Wednesday"); break;
+            case 'H': printf("Thursday"); break;
+            case 'F': printf("Friday"); break;
+            case 'S': printf("Saturday"); break;
+            case 'U': printf("Sunday"); break;
+            default:(printf("Please only enter a character- M,T,W,H,F,S,U"));
 }
-
     return 0;
 }
