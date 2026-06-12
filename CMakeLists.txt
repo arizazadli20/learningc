@@ -8,4 +8,5 @@ add_executable(codes main.c second.c
         locket.c
         radius.c
         lockernew.c
-        currencyapp.c)
+        currencyapp.c
+        switches.c)
