@@ -40,5 +40,5 @@ int currency() {
 
     return 0;
 }//
-// Created by ARIZ AZADOV on 12/06/26.
+// Created by ARIZ AZADOV on 12/06/26a.
 //
