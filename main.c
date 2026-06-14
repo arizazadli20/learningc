@@ -4,20 +4,27 @@
 
 int main () {
 
-    char weekday='\0';
-printf("ENTER DAY OF THE WEEK (M,T,W,H,F,S,U): ");
-    scanf("%c",&weekday);
+    float number1=0;
+    float number2=0;
+    char symbol;
 
-    switch (weekday){
+    printf("Enter your first number: ");
+    scanf("%f",&number1);
 
-        case 'M': printf("Monday"); break;
-            case 'T': printf("Tuesday"); break;
-            case 'W': printf("Wednesday"); break;
-            case 'H': printf("Thursday"); break;
-            case 'F': printf("Friday"); break;
-            case 'S': printf("Saturday"); break;
-            case 'U': printf("Sunday"); break;
-            default:(printf("Please only enter a character- M,T,W,H,F,S,U"));
-}
+    printf("Enter your second number: ");
+    scanf("%f",&number2);
+
+    printf("Enter your operation (+,-,*,/): ");
+    scanf("%c",symbol);
+
+    switch (symbol) {
+
+        case '+': printf("%f",number1+number2); break;
+            case '-': printf("%f",number1-number2); break;
+            case '*': printf("%f",number1*number2); break;
+            case '/': printf("%f",number1/number2); break;
+    }
+
+
     return 0;
 }
