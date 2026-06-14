@@ -2,7 +2,7 @@
 
 //Calculator
 
-int main () {
+int calculator () {
 
     char operator='\0';
     double num1=0.0;
@@ -22,20 +22,22 @@ int main () {
     switch (operator) {
         case '+': result = num1 + num2; break;
         case '-': result = num1 - num2; break;
-            case '*': result = num1 * num2; break;
-            case '/':
+        case '*': result = num1 * num2; break;
+        case '/':
             if (num2 == 0) {
                 printf("You cannot divide by zero!");
             }
-                else
-                {
-                     result = num1 / num2;
-                };
+            else
+            {
+                result = num1 / num2;
+            };
             break;
-            
+
         default: printf("Wrong input"); break;
     }
-printf("Your result is: %.2lf", result);
+    printf("Your result is: %.2lf", result);
 
     return 0;
-}
+}//
+// Created by ARIZ AZADOV on 14/06/26.
+//
