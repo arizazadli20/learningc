@@ -1,41 +1,29 @@
 #include <stdio.h>
 
-//Calculator
+
+int add (int x, int y) {
+    int result = x + y;
+    return result;
+
+}
+
+int subtract (int x, int y) {
+    int result = x - y;
+    return result;
+
+}
 
 int main () {
 
-    char operator='\0';
-    double num1=0.0;
-    double num2=0.0;
-    double result=0.0;
-
-    printf("Enter your first number: ");
-    scanf("%lf", &num1);
-
-    printf("Enter your operation (+,-,*,/): ");
-    scanf(" %c", &operator);
-
-    printf("Enter your second number: ");
-    scanf(" %lf", &num2);
+    int result = subtract(3, 4);
+    printf("%d\n", result);
 
 
-    switch (operator) {
-        case '+': result = num1 + num2; break;
-        case '-': result = num1 - num2; break;
-            case '*': result = num1 * num2; break;
-            case '/':
-            if (num2 == 0) {
-                printf("You cannot divide by zero!");
-            }
-                else
-                {
-                     result = num1 / num2;
-                };
-            break;
-            
-        default: printf("Wrong input"); break;
-    }
-printf("Your result is: %.2lf", result);
+
 
     return 0;
-}
+
+    }
+
+
+
