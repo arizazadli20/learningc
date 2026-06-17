@@ -18,12 +18,7 @@ int main () {
     int result = subtract(3, 4);
     printf("%d\n", result);
 
-
-
-
-    return 0;
-
-    }
+    return 0;}
 
 
 
