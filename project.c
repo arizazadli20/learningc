@@ -4,7 +4,7 @@
 // UFC GAME 
 
 
-int main (){
+int main () {
 
   char name[20];
   char surname[20];
@@ -14,6 +14,7 @@ int main (){
 
  
  int hp=100;
+ int stamina=50;
   int opponent_hp=100;
  int kick=10;
   int punch=5;
@@ -22,11 +23,11 @@ int main (){
 
   printf("DANA WHITE : Welcome to the UFC. Who are you? \n");
   printf("Enter your name: ");
-  scanf("%s", &name);
+  scanf("%19s", name);
   printf("Enter your surname: ");
-  scanf("%s", &surname);
+  scanf("%19s", surname);
   printf("Enter your nationality: ");
-  scanf("%s", &nationality);
+  scanf("%19s", nationality);
 
   printf("DANA WHITE : Welcome %s %s. Now chose your nickname? \n", name, surname);
   printf("1. The Eagle \n"); 
@@ -134,8 +135,22 @@ printf("Round %d: \n", round);
         break;
     }
 
-  return 0; 
+    if (opponent_hp > 0) {
+      printf("Your opponent strikes back! \n");
+      hp -= punch;
+    }
 
+    round++;
+    printf("Your HP: %d | Opponent HP: %d\n", hp, opponent_hp);
+  }
+
+  if (hp > 0) {
+    printf("You won the fight! \n");
+  } else {
+    printf("You lost the fight! \n");
+  }
+
+  return 0;
 }
 
 
