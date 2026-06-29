@@ -35,7 +35,7 @@ int calculator () {
 
         default: printf("Wrong input"); break;
     }
-    printf("Your result is: %.2lf", result);
+    printf("Your result is: %.2lf", result); // bunu bitir.
 
     return 0;
 }//
