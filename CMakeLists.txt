@@ -11,4 +11,5 @@ add_executable(codes main.c second.c
         currencyapp.c
         switches.c
         calculator.c
-        calculatormain.c)
+        calculatormain.c
+        forloop.c)
