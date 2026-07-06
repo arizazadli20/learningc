@@ -1,20 +1,19 @@
 #include <stdio.h>
 #include <unistd.h>
 
-int main(){
+int main() {
+    for (int i = 1; i <= 10 ; i++ ) {
+        for (int x= 1; x <= 10 ; x++ ) {
+            printf(" %3d ", i * x);
+        }
 
-    for (int i=10; i >= 0;  i-- ) {
-        sleep(1);
-        printf("%d\n", i);
+        printf("\n");
 
 
-    }
+    };
 
-    printf("Happy NEW YEAR!!!");
-return 0;
+    return 0;
 
 };
-
-
 
 
