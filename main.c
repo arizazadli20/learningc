@@ -1,24 +1,20 @@
 #include <stdio.h>
 
+int main(){
 
-int add (int x, int y) {
-    int result = x + y;
-    return result;
+ int age= '0';
+    char name[] = "";
 
-}
+    printf("What is your age:  ");
+    scanf("%d" , &age);
+   while (age>=18) {
 
-int subtract (int x, int y) {
-    int result = x - y;
-    return result;
+      printf ("Enter your name: ");
+       scanf("%c", name);
 
-}
+   };
 
-int main () {
 
-    int result = subtract(3, 4);
-    printf("%d\n", result);
-
-    return 0;}
-
+};
 
 
