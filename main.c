@@ -1,20 +1,31 @@
 #include <stdio.h>
+#include <stdbool.h>
 
 int main(){
 
- int age= '0';
-    char name[] = "";
+    bool isRunning = true;
+    char response = '\0';
 
-    printf("What is your age:  ");
-    scanf("%d" , &age);
-   while (age>=18) {
+while(isRunning){
 
-      printf ("Enter your name: ");
-       scanf("%c", name);
+    printf("You are playing a game\n");
+    printf("Would u like to contunie: (Y - YES, N- NO) ");
+    scanf(" %c",&response);
+
+    if (response != 'Y' && response != 'y' ) {
+        isRunning = false;
+    };
+};
+
+    printf( "You exit the game" );
+return 0;
+
+
+
+
 
    };
 
 
-};
 
 
