@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+    
+    int x=0;
+    int y=0;
+    int sum=0;
+    int dif=0;
+    float a=0.0;
+    float b=0.0;
+    float fsum=0.0;
+    float fdif=0.0;
+    
+    
+    scanf("%d %d", &x, &y);
+    scanf("%f %f", &a, &b);
+    
+    sum=x+y;
+    dif=x-y;
+    
+    fsum=a+b;
+    fdif=a-b;
+    
+    printf("%d %d \n",sum,dif);
+    printf("%.1f %.1f",fsum,fdif);
+    
+    return 0;
+}
