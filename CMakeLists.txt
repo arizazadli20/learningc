@@ -12,4 +12,5 @@ add_executable(codes main.c second.c
         switches.c
         calculator.c
         calculatormain.c
-        forloop.c)
+        forloop.c
+        nem.c)
