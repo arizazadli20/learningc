@@ -1,36 +1,34 @@
 #include <stdio.h>
-#include <string.h>
-#include <math.h>
-#include <stdlib.h>
 
-int main()
-{
-    int a, b;
-    int i;
-    scanf("%d\n%d", &a, &b);
+//task1
 
-    for (i = a; i <= b; i++) {
+int main () {
 
-        if (i >= 1 && i <= 9) {
-            if (i == 1) { printf("one\n"); }
-            else if (i == 2) { printf("two\n"); }
-            else if (i == 3) { printf("three\n"); }
-            else if (i == 4) { printf("four\n"); }
-            else if (i == 5) { printf("five\n"); }
-            else if (i == 6) { printf("six\n"); }
-            else if (i == 7) { printf("seven\n"); }
-            else if (i == 8) { printf("eight\n"); }
-            else if (i == 9) { printf("nine\n"); }
-        }
-        else if (i > 9 && i % 2 == 0) {
-            printf("even\n");
-        }
-        // DÜZƏLİŞ: Burada tək ədədləri (odd) yoxlayırıq
-        else if (i > 9 && i % 2 != 0) {
-            printf("odd\n");
+    int a=0;
+
+    printf("ml' nob:\n");
+    if (scanf("%d", &a) != 1) {
+        printf("Neh mi'\n");
+        return 0;
+    }
+
+    if (a<0 || a>8) {
+        printf("Qih mi' %d\n", a);
+    }
+
+
+    else {
+        printf("Qapla'\n");
+         if(a==0) { printf("noH QapmeH wo' Qaw'lu'chugh yay chavbe'lu' 'ej wo' choqmeH may' DoHlu'chugh lujbe'lu'.\n");}
+            else if (a==1) {printf("bortaS bIr jablu'DI' reH QaQqu' nay'.\n");}
+            else if (a==2) {printf("Qu' buSHa'chugh SuvwI', batlhHa' vangchugh, qoj matlhHa'chugh, pagh ghaH SuvwI''e'.\n");}
+            else if (a==3) {printf("bISeH'eghlaH'be'chugh latlh Dara'laH'be'.\n");}
+            else if (a==4) {printf("qaStaHvIS wa' ram loS SaD Hugh SIjlaH qetbogh loD.\n");}
+            else if (a==5) {printf("Suvlu'taHvIS yapbe' HoS neH.\n");}
+            else if (a==6) {printf("Ha'DIbaH DaSop 'e' DaHechbe'chugh yIHoHQo'.\n");}
+            else if (a==7) {printf("Heghlu'meH QaQ jajvam.\n");}
+            else if (a==8) {printf("leghlaHchu'be'chugh mIn lo'laHbe' taj jej.\n");}
+
         }
 
     }
-    return 0;
-
-}
