@@ -67,4 +67,6 @@ int main() {
 
 
     return 0;
-}
+}//
+// Created by ARIZ AZADOV on 19/08/26.
+//

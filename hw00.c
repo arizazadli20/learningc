@@ -2,7 +2,7 @@
 
 //progtest hw00
 
-int main () {
+int hw () {
 
     int a=0;
 
