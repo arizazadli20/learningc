@@ -7,7 +7,7 @@ int main() {
 
     double x1=0.0;
     double y1=0.0;
-    double r1=0.0;
+    double r1=0.0; //a
     double x2=0.0;
     double y2=0.0;
     double r2=0.0;
