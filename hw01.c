@@ -3,7 +3,7 @@
 
 //homework task 1
 
-int main() {
+int hw01() {
 
     double x1=0.0;
     double y1=0.0;

@@ -14,4 +14,5 @@ add_executable(codes main.c second.c
         calculatormain.c
         forloop.c
         hw00.c
-        hw01.c)
+        hw01.c
+        hw02.c)
